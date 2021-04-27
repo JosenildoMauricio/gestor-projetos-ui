@@ -1,0 +1,36 @@
+<mat-nav-list>
+    <div class="profile-card">
+        <div class="header">
+            <h2 style="margin-bottom: 5px">{{authService.nomeUsuarioLogado}}</h2>
+            <!--<h4>{{authService.jwtPayload?.user_name}}</h4>-->
+        </div>
+        <div class="container_img">
+            <img class="img-thumbnail"
+                 [ngClass]="{ 'img-thumbnail' : authService.foto !== '', 'img-thumbnail-error': authService.foto === ''}"
+                 [src]="authService.foto" cache="false" alt=""/>
+        </div>
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <h2 matSubheader>Cadastros</h2>
+
+    <a mat-list-item routerLinkActive="list-item-active">Usuario</a>
+    <a mat-list-item routerLinkActive="list-item-active">Tipo urgência</a>
+    <!--<a mat-list-item routerLinkActive="list-item-active" routerLink="/">Articles</a>-->
+
+    <mat-divider></mat-divider>
+
+    <h2 matSubheader>Ferramentas</h2>
+
+    <a mat-list-item routerLinkActive="list-item-active">
+        <mat-icon>import_contacts</mat-icon>
+        Contacts
+    </a>
+
+    <a mat-list-item routerLinkActive="list-item-active">
+        <mat-icon>contact_phone</mat-icon>
+        Leads
+    </a>
+
+</mat-nav-list>

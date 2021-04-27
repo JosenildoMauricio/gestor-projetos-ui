@@ -1,0 +1,51 @@
+<div class="container" style="margin-top: calc(5%); width: calc(60%)">
+    <mat-card style="width: calc(100%)" class="card-box-shadow">
+        <mat-card-header>
+            <mat-card-title>TIPOS URGÊNCIAS</mat-card-title>
+            <!--<mat-card-subtitle>Você está criando uma nova conta.</mat-card-subtitle>-->
+        </mat-card-header>
+
+        <mat-card-content>
+            <div class="row" style="margin: 15px">
+                <div class="col-md-4">
+                    <mat-form-field>
+                        <mat-label>ID</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-md-8">
+                    <mat-form-field>
+                        <mat-label>Nome</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row" style="margin: 15px">
+                <div class="col-md-12">
+
+                </div>
+            </div>
+
+
+
+
+
+
+        </mat-card-content>
+
+        <mat-card-actions>
+            <div class="row" style="margin: 15px">
+                <div class="col-md-6">
+                    <button mat-raised-button color="primary" style="width: 100%;">Salvar</button>
+                </div>
+                <div class="col-md-6">
+                    <button mat-raised-button style="width: 100%; background-color: orange; color: white"
+                        (click)="cancelarClick()">Cancelar</button>
+                </div>
+            </div>
+        </mat-card-actions>
+    </mat-card>
+</div>
+
+
