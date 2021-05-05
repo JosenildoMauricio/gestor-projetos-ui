@@ -42,7 +42,7 @@ export class HeaderComponent implements OnInit {
     sair() {
         this.logoutService.logout()
             .then(() => {
-                this.router.navigate(['/login']);
+                this.router.navigate(['/default']);
             })
             .catch(erro => this.errorHandler.handle(erro));
     }
